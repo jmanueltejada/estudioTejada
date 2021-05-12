@@ -1,0 +1,108 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Raleway', sans-serif;
+	background-color: #8aab93	
+}
+footer{ background-color: black;
+		height: auto;
+		width: auto;
+		font-family: open sans;
+		padding-top: 40px;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		 flex-direction: column;
+		 text-align: center;}
+#primerTitulo{	
+	font-style: italic;
+	font-weight: bold;
+	color: #1A5E86;
+	font-size: 40px;
+	word-spacing: 10px;
+	text-align: center;
+}
+ul {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+ul li {
+    display: inline-block;
+}
+#submenu{ 
+    position:absolute;
+    display: none;
+}
+#submenu li {
+    display: block;
+}
+ul li:hover #submenu{
+    display: block;
+    color: red;
+    background-color: white;
+}
+
+div nav{
+	word-spacing: 10px;
+	padding-left: 20px;
+}
+.servicios{
+	display: grid;
+	grid-template-rows: 200px 200px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "divorcios familias"
+						 "sucesorio contratos";
+	grid-column-gap: 15px;
+	grid-row-gap: 5px;
+	border-color: #1A5E86;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.divorciosExpress{
+	grid-area: divorcios;
+	background-color: white;
+}
+
+.derechoFamilias{
+	grid-area: familias;
+}
+
+.derechoSucesorio{
+	grid-area: sucesorio;
+}
+
+.contratos{
+	grid-area: contratos;
+	background-color: white;
+}
+
+.fondoBlanco{
+	background-color: white;
+}
+
+div div p{
+	font-size: 15px;
+	font-style: italic;
+	margin-left: 10px;
+	margin-top: 5px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.animate__zoomIn h2{ 
+	animation-name: efectazo;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+@keyframes efectazo{
+	0%{
+		font-size: 30px;}
+	50%{
+		font-size: 45px;
+		color: black;}
+	100%{
+		font-size: 30px;
+	}
+}

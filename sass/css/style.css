@@ -1,0 +1,170 @@
+/*IMPORTS*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */ }
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
+
+/*VARIABLES*/
+/*BEM*/
+/*CONDICIONALES*/
+/* 1ER VALOR == 2DO VALOR  (1er valor igual a 2do valor)*/
+/* 1ER VALOR != 2DO VALOR  (1er valor distinto a 2do valor)*/
+/* 1ER VALOR < 2DO VALOR  (1er valor menor a 2do valor)*/
+/* 1ER VALOR > 2DO VALOR  (1er valor mayor a 2do valor)*/
+p {
+  color: lightgray; }
+
+/*HOJA DE ESTILO DE INDEX1.HTML*/
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #8aab93; }
+
+header h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  height: 100%; }
+
+body .titulo {
+  border: solid 6px black;
+  padding: 2px; }
+  body .titulo .encabezado {
+    font-family: "raleway";
+    font-size: 18px;
+    text-align: justify-all; }
+
+.padre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 50px;
+  grid-template-areas: "izquierda centro1 centro2 derecha" "textoc textoa textoi textoau";
+  grid-column-gap: 15px;
+  grid-row-gap: 5px; }
+  .padre .asidebarDerecha {
+    grid-area: derecha;
+    background-image: url("C:Users/Mauricio Vergara/Desktop/estudioTejada/contratos.png"); }
+  .padre .centro1 {
+    grid-area: centro1;
+    background-image: url("C:Users/Mauricio Vergara/Desktop/estudioTejada/familia.jpg"); }
+  .padre .centro2 {
+    grid-area: centro2;
+    background-image: url("C:Users/Mauricio Vergara/Desktop/estudioTejada/sucesiones.jpg"); }
+  .padre .asidebarIzquierda {
+    grid-area: izquierda;
+    background-image: url("C:Users/Mauricio Vergara/Desktop/estudioTejada/divorcio.jpg"); }
+  .padre .textoc {
+    grid-area: textoc; }
+  .padre .textoa {
+    grid-area: textoa; }
+  .padre .textoi {
+    grid-area: textoi; }
+  .padre .textoau {
+    grid-area: textoau; }
+
+.madre {
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "equipo actualidad";
+  grid-column-gap: 15px;
+  grid-row-gap: 5px; }
+
+.madre__equipo {
+  grid-area: equipo;
+  padding-left: 10px; }
+
+.madre__actualidad {
+  grid-area: actualidad; }
+
+footer {
+  background-color: black;
+  height: auto;
+  width: auto;
+  font-family: open sans;
+  padding-top: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+/*FIN HOJA DE ESTILO INDEX1.HTML*/
+/*INICIO HOJA DE ESTILO NUESTROEQUIPO.HTML*/
+#primertitulo {
+  font-style: italic;
+  font-weight: bold;
+  color: #1A5E86;
+  font-size: 40px;
+  word-spacing: 10px;
+  text-align: center; }
+
+.nuestroequip {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "imagen1 descrip1" "imagen2 descrip2";
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .nuestroequip .imagen1 {
+    grid-area: imagen1;
+    padding-left: 50px; }
+  .nuestroequip .imagen2 {
+    grid-area: imagen2;
+    padding-left: 50px; }
+
+.nuestroequip__descrip1 {
+  grid-area: descrip1; }
+
+.nuestroequip__descrip2 {
+  grid-area: descrip2; }
+
+h4 {
+  font-size: 15px;
+  color: #1A5E86;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px; }
+
+/*FIN HOJA DE ESTILO NUESTROEQUIPO.HTML*/
