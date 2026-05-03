@@ -1,0 +1,27 @@
+---
+name: hook-generator
+description: Produces attention-grabbing hooks for videos, social posts, and content intros to maximize engagement.
+---
+
+# Hook Generator
+
+## Overview
+Creates compelling openings to capture attention immediately.
+
+## Features
+- Short, impactful
+- Curiosity-driven
+- Adaptable to content type
+
+## Output Format
+- Hook sentence
+- Optional follow-up intro
+
+## Instructions
+- Focus on curiosity or bold statements
+- Keep concise
+- Match audience interest
+
+## Constraints
+- Avoid generic hooks
+- Maintain relevance
